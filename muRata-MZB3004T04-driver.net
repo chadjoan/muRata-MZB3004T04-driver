@@ -1,0 +1,165 @@
+( { EESchema Netlist Version 1.1 created  Fri 15 Jul 2022 17:55:46 }
+ ( /62D0BDB1 AX3_1  R2 330k
+  (    1 Vs )
+  (    2 Net-(Q1-Pad4) )
+ )
+ ( /62D3A251 AX3_1  R4 470k
+  (    1 Net-(Q1-Pad4) )
+  (    2 Vc )
+ )
+ ( /62D15C85 AX3_1  R3B1 470k
+  (    1 Net-(Q1-Pad1) )
+  (    2 GND )
+ )
+ ( /62D155EE AX3_1  R3A1 2.2M
+  (    1 Net-(Q1-Pad1) )
+  (    2 GND )
+ )
+ ( /62D1A302 AX3_1  R1 2.2M
+  (    1 Vs )
+  (    2 Net-(C2-Pad1) )
+ )
+ ( /62D1C19D AX3_1  R5 100k
+  (    1 Vc )
+  (    2 Vin )
+ )
+ ( /62D1CA79 AX3_1  R6 100k
+  (    1 Vin )
+  (    2 GND )
+ )
+ ( /62D2B06C RA1_3  C1 1uF
+  (    1 Vs )
+  (    2 GND )
+ )
+ ( /62D2E23E RA1_3  C2 2.2uF
+  (    1 Net-(C2-Pad1) )
+  (    2 GND )
+ )
+ ( /62D319C2 AX3_1  R8 4.3k
+  (    1 Vin )
+  (    2 Net-(C5A1-Pad1) )
+ )
+ ( /62D1E4C8 AX1_1N  C5A1 215pF
+  (    1 Net-(C5A1-Pad1) )
+  (    2 OPBO )
+ )
+ ( /62D20FCD AX1_1N  C5B1 465pF
+  (    1 Net-(C5A1-Pad1) )
+  (    2 OPBO )
+ )
+ ( /62D24F27 AX3_1  R7 6.2k
+  (    1 Net-(C5A1-Pad1) )
+  (    2 OPCO )
+ )
+ ( /62D22A7C OpAmp_4CT_OPA4191_BREAKOUT  IC1 OPA4191
+  (    1 OPAO )
+  (    2 OPAM )
+  (    3 Vin )
+  (    4 Vc )
+  (    5 Vin )
+  (    6 OPBM )
+  (    7 OPBO )
+  (    8 OPCO )
+  (    9 OPCM )
+  (   10 OPCP )
+  (   11 GND )
+  (   12 Vin )
+  (   13 OPDM )
+  (   14 OPDO )
+ )
+ ( /62D28A97 MOSFET_2CT_NP_RM4606S8_BREAKOUT  Q1 MOS_RM4606S8
+  (    1 Net-(Q1-Pad1) )
+  (    2 Net-(C2-Pad1) )
+  (    3 Vs )
+  (    4 Net-(Q1-Pad4) )
+  (    5 Vc )
+  (    6 Vc )
+  (    7 Net-(Q1-Pad4) )
+  (    8 Net-(Q1-Pad4) )
+ )
+ ( /62D1DD5F AX1_1N  C6 1000pF
+  (    1 Net-(C5A1-Pad1) )
+  (    2 OPBM )
+ )
+ ( /62D90147 AX3_1  R9 27k
+  (    1 OPBO )
+  (    2 OPBM )
+ )
+ ( /62DA3B8D AX3_1  R10 10k
+  (    1 OPBO )
+  (    2 OPAM )
+ )
+ ( /62DAF988 TRANS_2CT_NPN_PNP_PBSS4032SPN_BREAKOUT  Q2 Trans_PBSS4032SPN
+  (    1 Net-(Q2-Pad1) )
+  (    2 OPAO )
+  (    3 Net-(Q2-Pad1) )
+  (    4 OPAO )
+  (    5 GND )
+  (    6 GND )
+  (    7 Vc )
+  (    8 Vc )
+ )
+ ( /62DB46D6 AX3_1  R12 100
+  (    1 OPAO )
+  (    2 Net-(Q2-Pad1) )
+ )
+ ( /62DD1A5F AX3_1  R11 470k
+  (    1 OPAM )
+  (    2 Net-(Q2-Pad1) )
+ )
+ ( /62DE49A7 AX3_1  R17 1
+  (    1 Net-(Q2-Pad1) )
+  (    2 PUMP2 )
+ )
+ ( /62DE4F6E AX3_1  R13 20k
+  (    1 Net-(Q2-Pad1) )
+  (    2 OPDM )
+ )
+ ( /62DEC9C6 AX3_1  R18 10k
+  (    1 PUMP2 )
+  (    2 OPCM )
+ )
+ ( /62DED315 AX3_1  R19 10k
+  (    1 Net-(Q2-Pad1) )
+  (    2 OPCP )
+ )
+ ( /62E4310B AX3_1  R21 330k
+  (    1 OPCP )
+  (    2 Vin )
+ )
+ ( /62E676DF AX3_1  R14 20k
+  (    1 OPDM )
+  (    2 Vin )
+ )
+ ( /62E81267 AX3_1  R20 330k
+  (    1 OPCO )
+  (    2 OPCM )
+ )
+ ( /62EA8E1A AX3_1  R16 100
+  (    1 OPDO )
+  (    2 PUMP1 )
+ )
+ ( /62EC08FC TRANS_2CT_NPN_PNP_PBSS4032SPN_BREAKOUT  Q3 Trans_2ct_NPN_PNP_PBSS4032SPN_breakout
+  (    1 PUMP1 )
+  (    2 OPDO )
+  (    3 PUMP1 )
+  (    4 OPDO )
+  (    5 GND )
+  (    6 GND )
+  (    7 Vc )
+  (    8 Vc )
+ )
+ ( /6300C7C8 AX3_1  R15 220k
+  (    1 OPDM )
+  (    2 PUMP1 )
+ )
+ ( /630BE2BD RA1_3  C3 1uF
+  (    1 Vc )
+  (    2 Vin )
+ )
+ ( /630BEC57 RA1_3  C4 1uF
+  (    1 Vin )
+  (    2 GND )
+ )
+)
+*
