@@ -197,7 +197,7 @@ $EndComp
 Text GLabel 1250 7100 3    50   Input ~ 0
 GND
 Text GLabel 1850 6250 2    50   Output ~ 0
-Vin
+Vm
 Wire Wire Line
 	1000 5700 1000 5550
 Wire Wire Line
@@ -257,7 +257,7 @@ F 3 "" H 1400 3600 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Text GLabel 2850 6400 3    50   Input ~ 0
-Vin
+Vm
 $Comp
 L V_Passive:R R8
 U 1 1 62D319C2
@@ -351,11 +351,11 @@ OPAO
 Text GLabel 5100 6200 0    50   Input ~ 0
 OPAM
 Text GLabel 5100 6350 0    50   Input ~ 0
-Vin
+Vm
 Text GLabel 5100 6500 0    50   Input ~ 0
 Vc
 Text GLabel 5100 6650 0    50   Input ~ 0
-Vin
+Vm
 Text GLabel 5100 6800 0    50   Input ~ 0
 OPBM
 Text GLabel 5100 6950 0    50   Input ~ 0
@@ -365,7 +365,7 @@ OPDO
 Text GLabel 6400 6200 2    50   Input ~ 0
 OPDM
 Text GLabel 6400 6350 2    50   Input ~ 0
-Vin
+Vm
 Text GLabel 6400 6500 2    50   Input ~ 0
 GND
 Text GLabel 6400 6650 2    50   Input ~ 0
@@ -618,7 +618,7 @@ Connection ~ 8750 5650
 Wire Wire Line
 	8750 5650 8850 5650
 Text GLabel 8750 6250 3    50   Input ~ 0
-Vin
+Vm
 $Comp
 L V_Passive:R R14
 U 1 1 62E676DF
@@ -631,7 +631,7 @@ F 3 "" H 8000 3400 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Text GLabel 8000 3050 1    50   Input ~ 0
-Vin
+Vm
 Wire Wire Line
 	7900 3750 8000 3750
 Wire Wire Line

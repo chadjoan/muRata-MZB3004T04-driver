@@ -1,4 +1,4 @@
-( { EESchema Netlist Version 1.1 created  Fri 15 Jul 2022 17:55:46 }
+( { EESchema Netlist Version 1.1 created  Sat 16 Jul 2022 18:43:11 }
  ( /62D0BDB1 AX3_1  R2 330k
   (    1 Vs )
   (    2 Net-(Q1-Pad4) )
@@ -21,10 +21,10 @@
  )
  ( /62D1C19D AX3_1  R5 100k
   (    1 Vc )
-  (    2 Vin )
+  (    2 Vm )
  )
  ( /62D1CA79 AX3_1  R6 100k
-  (    1 Vin )
+  (    1 Vm )
   (    2 GND )
  )
  ( /62D2B06C RA1_3  C1 1uF
@@ -36,7 +36,7 @@
   (    2 GND )
  )
  ( /62D319C2 AX3_1  R8 4.3k
-  (    1 Vin )
+  (    1 Vm )
   (    2 Net-(C5A1-Pad1) )
  )
  ( /62D1E4C8 AX1_1N  C5A1 215pF
@@ -54,16 +54,16 @@
  ( /62D22A7C OpAmp_4CT_OPA4191_BREAKOUT  IC1 OPA4191
   (    1 OPAO )
   (    2 OPAM )
-  (    3 Vin )
+  (    3 Vm )
   (    4 Vc )
-  (    5 Vin )
+  (    5 Vm )
   (    6 OPBM )
   (    7 OPBO )
   (    8 OPCO )
   (    9 OPCM )
   (   10 OPCP )
   (   11 GND )
-  (   12 Vin )
+  (   12 Vm )
   (   13 OPDM )
   (   14 OPDO )
  )
@@ -125,11 +125,11 @@
  )
  ( /62E4310B AX3_1  R21 330k
   (    1 OPCP )
-  (    2 Vin )
+  (    2 Vm )
  )
  ( /62E676DF AX3_1  R14 20k
   (    1 OPDM )
-  (    2 Vin )
+  (    2 Vm )
  )
  ( /62E81267 AX3_1  R20 330k
   (    1 OPCO )
@@ -155,10 +155,10 @@
  )
  ( /630BE2BD RA1_3  C3 1uF
   (    1 Vc )
-  (    2 Vin )
+  (    2 Vm )
  )
  ( /630BEC57 RA1_3  C4 1uF
-  (    1 Vin )
+  (    1 Vm )
   (    2 GND )
  )
 )
