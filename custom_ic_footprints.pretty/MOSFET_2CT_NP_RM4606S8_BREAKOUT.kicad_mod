@@ -1,8 +1,0 @@
-(module MOSFET_2CT_NP_RM4606S8_BREAKOUT (layer F.Cu) (tedit 62D1A468)
-  (fp_text reference REF** (at 0 0.5) (layer F.SilkS)
-    (effects (font (size 1 1) (thickness 0.15)))
-  )
-  (fp_text value MOSFET_2CT_NP_RM4606S8_BREAKOUT (at 0 -0.5) (layer F.Fab)
-    (effects (font (size 1 1) (thickness 0.15)))
-  )
-)
