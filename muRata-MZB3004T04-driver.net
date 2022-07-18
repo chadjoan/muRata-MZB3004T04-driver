@@ -1,4 +1,4 @@
-( { EESchema Netlist Version 1.1 created  Sun 17 Jul 2022 19:24:11 }
+( { EESchema Netlist Version 1.1 created  Sun 17 Jul 2022 22:19:15 }
  ( /62D0BDB1 AX3_1  R2 330k
   (    1 Vs )
   (    2 Net-(Q1-Pad4) )
@@ -181,6 +181,21 @@
   (    1 Net-(Q4-Pad1) )
   (    2 GND )
   (    3 GNDsw )
+ )
+ ( /63059671 SIP4  J3 PUMP_CONN
+  (    1 PUMP2 )
+  (    2 PUMP1 )
+  (    3 PUMP1 )
+  (    4 PUMP2 )
+ )
+ ( /63150570 SIP3  J2 PWR_SIG_CONN
+  (    1 GNDsw )
+  (    2 Vs )
+  (    3 Vsig )
+ )
+ ( /63151226 SIP2  J1 PWR_ONLY_CONN
+  (    1 GND )
+  (    2 Vs )
  )
 )
 *

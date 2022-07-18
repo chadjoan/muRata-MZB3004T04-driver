@@ -767,43 +767,14 @@ Wire Wire Line
 	8850 2650 10850 2650
 Wire Wire Line
 	10850 2650 10850 3900
-Wire Wire Line
-	10850 3900 9400 3900
 Connection ~ 9400 3900
-Wire Wire Line
-	10850 4800 7900 4800
-Wire Wire Line
-	7900 4800 7900 4950
 Connection ~ 7900 4950
-Text GLabel 10850 4700 1    50   Input ~ 0
-PUMP2
-Text GLabel 10850 4000 3    50   Input ~ 0
-PUMP1
-Wire Wire Line
-	10850 3900 10850 4000
-Connection ~ 10850 3900
-Wire Wire Line
-	10850 4800 10850 4700
-Wire Notes Line
-	10700 4000 11000 4000
-Wire Notes Line
-	11000 4000 11000 4700
-Wire Notes Line
-	11000 4700 10700 4700
-Wire Notes Line
-	10700 4700 10700 4000
 Wire Wire Line
 	2250 5600 2100 5600
 Wire Wire Line
 	2100 5600 2100 4400
 Wire Wire Line
 	2100 4400 4300 4400
-Wire Wire Line
-	4300 4400 4300 2200
-Wire Wire Line
-	4300 2200 11100 2200
-Wire Wire Line
-	11100 2200 11100 5500
 Wire Wire Line
 	11100 5500 9400 5500
 Connection ~ 9400 5500
@@ -900,57 +871,241 @@ $EndComp
 Connection ~ 1450 3050
 Wire Wire Line
 	1450 2700 1450 3050
+Text Notes 5300 750  0    71   ~ 0
+Optional TTL Switch
+Text Notes 5300 1200 0    39   ~ 0
+Drives >8V Vs with <5V Vsig,\ngiven MOSFET with suitably low Vgs.\nKeep Rds(on) low to avoid voltage drop.\nTo use: replace `GND` with `GNDsw`\non external low-side connector.\nInput then has 3 pins: {GNDsw, Vs, Vsig}
+Wire Wire Line
+	11100 5500 11100 2300
+Wire Wire Line
+	11100 2300 4300 2300
+Wire Wire Line
+	4300 2300 4300 4400
+Wire Wire Line
+	6950 1100 7100 1100
+Wire Wire Line
+	6950 2000 7050 2000
+Wire Wire Line
+	6950 1200 6950 1100
+Text GLabel 5150 1450 0    50   Input ~ 0
+Vsig
+Text GLabel 7050 2000 2    50   Input ~ 0
+GNDsw
+Text GLabel 7100 1100 2    50   Input ~ 0
+GND
+Wire Wire Line
+	6950 1600 6950 2000
+Wire Wire Line
+	5150 1450 5300 1450
+Wire Wire Line
+	5300 1450 5300 2000
+Wire Wire Line
+	5300 2000 5450 2000
+Connection ~ 5300 1450
+Wire Wire Line
+	5300 1450 5450 1450
+Connection ~ 6950 2000
+Wire Wire Line
+	6650 1450 6750 1450
+$Comp
+L V_Passive:R R23
+U 1 1 62EDE748
+P 5700 1450
+F 0 "R23" V 5700 1369 50  0000 L CNN
+F 1 "10k" V 5796 1405 50  0000 L CNN
+F 2 "AX3_1" H 5700 1450 50  0001 C CNN
+F 3 "" H 5700 1450 50  0001 C CNN
+	1    5700 1450
+	0    -1   -1   0   
+$EndComp
 $Comp
 L V_Passive:R R22
 U 1 1 62D54DDC
-P 3500 7100
-F 0 "R22" H 3578 7146 50  0000 L CNN
-F 1 "220k" H 3578 7055 50  0000 L CNN
-F 2 "AX3_1" H 3500 7100 50  0001 C CNN
-F 3 "" H 3500 7100 50  0001 C CNN
-	1    3500 7100
-	1    0    0    -1  
+P 5700 2000
+F 0 "R22" V 5700 1920 50  0000 L CNN
+F 1 "1M" V 5800 1900 50  0000 L CNN
+F 2 "AX3_1" H 5700 2000 50  0001 C CNN
+F 3 "" H 5700 2000 50  0001 C CNN
+	1    5700 2000
+	0    -1   -1   0   
 $EndComp
-Text GLabel 3900 7000 1    50   Input ~ 0
-GND
-Text GLabel 4000 7600 2    50   Input ~ 0
-GNDsw
-Text GLabel 3350 7350 0    50   Input ~ 0
-Vsig
-Text GLabel 3500 6850 1    50   Input ~ 0
-Vs
+$Comp
+L custom_ics:C-Ceramic_AX1_1N C7
+U 1 1 62FC70E2
+P 6050 1700
+F 0 "C7" H 5850 1750 50  0000 C BNN
+F 1 "220nF" H 5800 1650 50  0000 C BNN
+F 2 "AX1_1N" H 5750 1900 50  0001 C CNN
+F 3 "" H 5750 1900 50  0001 C CNN
+	1    6050 1700
+	-1   0    0    1   
+$EndComp
+$Comp
+L V_Passive:R R24
+U 1 1 62FE2B5E
+P 6400 1450
+F 0 "R24" V 6400 1369 50  0000 L CNN
+F 1 "470k" V 6496 1405 50  0000 L CNN
+F 2 "AX3_1" H 6400 1450 50  0001 C CNN
+F 3 "" H 6400 1450 50  0001 C CNN
+	1    6400 1450
+	0    -1   -1   0   
+$EndComp
 Wire Wire Line
-	3350 7350 3500 7350
-Connection ~ 3500 7350
+	5950 2000 6050 2000
 Wire Wire Line
-	3500 7350 3700 7350
+	6050 1850 6050 2000
+Connection ~ 6050 2000
 Wire Wire Line
-	3900 7100 3900 7000
+	6050 2000 6950 2000
+Wire Wire Line
+	5950 1450 6050 1450
+Wire Wire Line
+	6050 1450 6050 1600
+Wire Wire Line
+	6050 1450 6150 1450
+Connection ~ 6050 1450
 $Comp
 L custom_ics:MOSFET_1ct_Nch_Enh Q4
 U 1 1 62D546CF
-P 3850 7300
-F 0 "Q4" H 4002 7346 50  0000 L CNN
-F 1 "<50mOhm RdsOn" H 4002 7255 50  0000 L CNN
-F 2 "MOSFET_1CT_L3x1" H 3850 7650 50  0001 C CNN
-F 3 "" H 3750 7450 50  0001 C CNN
-	1    3850 7300
+P 6900 1400
+F 0 "Q4" H 7052 1446 50  0000 L CNN
+F 1 "<50mOhm RdsOn" H 7052 1355 50  0000 L CNN
+F 2 "MOSFET_1CT_L3x1" H 6900 1750 50  0001 C CNN
+F 3 "" H 6800 1550 50  0001 C CNN
+	1    6900 1400
 	1    0    0    -1  
 $EndComp
-Text Notes 3100 6200 0    71   ~ 0
-Optional TTL Switch
-Text Notes 3100 6650 0    39   ~ 0
-Drives >8V Vs with <5V Vsig,\ngiven MOSFET with suitably low Vgs.\nKeep Rds(on) low to avoid voltage drop.\nTo use: replace `GNS` with `GNDsw`\non external low-side connector.\nInput then has 3 pins: {GNDsw, Vs, Vsig}
+Text Notes 7050 1650 0    39   ~ 0
+ESD model assumes\n>1 nF Ciss (input capacitance)
+Text Notes 6850 1000 0    39   ~ 0
+Basic ESD protection is provided\nby the resistors and capacitor.\nShould survive 20kV for about 20us.\nSwitching time should be <10ms.\nCapacitor chosen was largest\nceramic cap available at the time.
+Wire Notes Line
+	4850 550  4850 2150
+Wire Notes Line
+	4850 2150 8150 2150
+Wire Notes Line
+	8150 2150 8150 550 
+Wire Notes Line
+	8150 550  4850 550 
 Wire Wire Line
-	3900 7500 3900 7600
+	10850 3900 9400 3900
 Wire Wire Line
-	3900 7600 4000 7600
+	7900 4800 7900 4950
+Wire Wire Line
+	10850 4800 7900 4800
+Wire Wire Line
+	10850 4800 10850 4700
+Connection ~ 10850 3900
+Wire Wire Line
+	10850 3900 10850 4000
+$Comp
+L V_Connector:CONN_4 J3
+U 1 1 63059671
+P 10200 1450
+F 0 "J3" H 10429 1521 50  0000 L CNN
+F 1 "PUMP_CONN" H 10429 1430 50  0000 L CNN
+F 2 "SIP4" H 10200 1450 50  0001 C CNN
+F 3 "" H 10200 1450 50  0001 C CNN
+	1    10200 1450
+	1    0    0    -1  
+$EndComp
 Wire Notes Line
-	3050 6050 3050 7700
+	11000 4000 11000 4700
 Wire Notes Line
-	3050 7700 4700 7700
+	10700 4000 11000 4000
 Wire Notes Line
-	4700 7700 4700 6050
+	11000 4700 10700 4700
 Wire Notes Line
-	4700 6050 3050 6050
+	10700 4700 10700 4000
+Text GLabel 10850 4000 3    50   Input ~ 0
+PUMP1
+Text GLabel 10850 4700 1    50   Input ~ 0
+PUMP2
+Wire Wire Line
+	9900 1350 9900 1500
+Wire Wire Line
+	9900 1500 10000 1500
+Wire Wire Line
+	9900 1350 10000 1350
+Wire Wire Line
+	9750 1200 9750 1650
+Wire Wire Line
+	9750 1650 10000 1650
+Wire Wire Line
+	9750 1200 10000 1200
+Text GLabel 9550 1350 0    50   Input ~ 0
+PUMP2
+Text GLabel 9550 1200 0    50   Input ~ 0
+PUMP1
+Wire Wire Line
+	9550 1200 9750 1200
+Connection ~ 9750 1200
+Wire Wire Line
+	9550 1350 9900 1350
+Connection ~ 9900 1350
+Text Notes 9000 750  0    71   ~ 0
+Pump Connector
+Text Notes 9000 1000 0    39   ~ 0
+Allows 4-pin reversible connector\nto be used. (Although, for this pump\nit probably isn't necessary...)
+Wire Notes Line
+	8900 550  8900 1900
+Wire Notes Line
+	8900 1900 11000 1900
+Wire Notes Line
+	11000 1900 11000 550 
+Wire Notes Line
+	11000 550  8900 550 
+$Comp
+L V_Connector:CONN_3 J2
+U 1 1 63150570
+P 3900 7150
+F 0 "J2" H 4128 7196 50  0000 L CNN
+F 1 "PWR_SIG_CONN" H 3750 6850 50  0000 L CNN
+F 2 "SIP3" H 3900 7150 50  0001 C CNN
+F 3 "" H 3900 7150 50  0001 C CNN
+	1    3900 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L V_Connector:CONN_2 J1
+U 1 1 63151226
+P 2700 7250
+F 0 "J1" H 2929 7321 50  0000 L CNN
+F 1 "PWR_ONLY_CONN" H 2550 7050 50  0000 L CNN
+F 2 "SIP2" H 2700 7250 50  0001 C CNN
+F 3 "" H 2700 7250 50  0001 C CNN
+	1    2700 7250
+	1    0    0    -1  
+$EndComp
+Text GLabel 2400 7150 0    50   Input ~ 0
+GND
+Text GLabel 2400 7300 0    50   Input ~ 0
+Vs
+Text GLabel 3600 7150 0    50   Input ~ 0
+Vs
+Text GLabel 3600 7000 0    50   Input ~ 0
+GNDsw
+Text GLabel 3600 7300 0    50   Input ~ 0
+Vsig
+Wire Wire Line
+	3600 7000 3700 7000
+Wire Wire Line
+	3600 7150 3700 7150
+Wire Wire Line
+	3600 7300 3700 7300
+Wire Wire Line
+	2400 7150 2500 7150
+Wire Wire Line
+	2400 7300 2500 7300
+Text Notes 2100 6950 0    71   ~ 0
+Power Connectors
+Wire Notes Line
+	2000 6750 2000 7600
+Wire Notes Line
+	2000 7600 4450 7600
+Wire Notes Line
+	4450 7600 4450 6750
+Wire Notes Line
+	4450 6750 2000 6750
 $EndSCHEMATC

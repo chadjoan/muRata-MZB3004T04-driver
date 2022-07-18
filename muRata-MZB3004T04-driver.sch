@@ -767,31 +767,8 @@ Wire Wire Line
 	8850 2650 10850 2650
 Wire Wire Line
 	10850 2650 10850 3900
-Wire Wire Line
-	10850 3900 9400 3900
 Connection ~ 9400 3900
-Wire Wire Line
-	10850 4800 7900 4800
-Wire Wire Line
-	7900 4800 7900 4950
 Connection ~ 7900 4950
-Text GLabel 10850 4700 1    50   Input ~ 0
-PUMP2
-Text GLabel 10850 4000 3    50   Input ~ 0
-PUMP1
-Wire Wire Line
-	10850 3900 10850 4000
-Connection ~ 10850 3900
-Wire Wire Line
-	10850 4800 10850 4700
-Wire Notes Line
-	10700 4000 11000 4000
-Wire Notes Line
-	11000 4000 11000 4700
-Wire Notes Line
-	11000 4700 10700 4700
-Wire Notes Line
-	10700 4700 10700 4000
 Wire Wire Line
 	2250 5600 2100 5600
 Wire Wire Line
@@ -1011,4 +988,124 @@ Wire Notes Line
 	8150 2150 8150 550 
 Wire Notes Line
 	8150 550  4850 550 
+Wire Wire Line
+	10850 3900 9400 3900
+Wire Wire Line
+	7900 4800 7900 4950
+Wire Wire Line
+	10850 4800 7900 4800
+Wire Wire Line
+	10850 4800 10850 4700
+Connection ~ 10850 3900
+Wire Wire Line
+	10850 3900 10850 4000
+$Comp
+L V_Connector:CONN_4 J3
+U 1 1 63059671
+P 10200 1450
+F 0 "J3" H 10429 1521 50  0000 L CNN
+F 1 "PUMP_CONN" H 10429 1430 50  0000 L CNN
+F 2 "SIP4" H 10200 1450 50  0001 C CNN
+F 3 "" H 10200 1450 50  0001 C CNN
+	1    10200 1450
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	11000 4000 11000 4700
+Wire Notes Line
+	10700 4000 11000 4000
+Wire Notes Line
+	11000 4700 10700 4700
+Wire Notes Line
+	10700 4700 10700 4000
+Text GLabel 10850 4000 3    50   Input ~ 0
+PUMP1
+Text GLabel 10850 4700 1    50   Input ~ 0
+PUMP2
+Wire Wire Line
+	9900 1350 9900 1500
+Wire Wire Line
+	9900 1500 10000 1500
+Wire Wire Line
+	9900 1350 10000 1350
+Wire Wire Line
+	9750 1200 9750 1650
+Wire Wire Line
+	9750 1650 10000 1650
+Wire Wire Line
+	9750 1200 10000 1200
+Text GLabel 9550 1200 0    50   Input ~ 0
+PUMP2
+Text GLabel 9550 1350 0    50   Input ~ 0
+PUMP1
+Wire Wire Line
+	9550 1200 9750 1200
+Connection ~ 9750 1200
+Wire Wire Line
+	9550 1350 9900 1350
+Connection ~ 9900 1350
+Text Notes 9000 750  0    71   ~ 0
+Pump Connector
+Text Notes 9000 1000 0    39   ~ 0
+Allows 4-pin reversible connector\nto be used. (Although, for this pump\nit probably isn't necessary...)
+Wire Notes Line
+	8900 550  8900 1900
+Wire Notes Line
+	8900 1900 11000 1900
+Wire Notes Line
+	11000 1900 11000 550 
+Wire Notes Line
+	11000 550  8900 550 
+$Comp
+L V_Connector:CONN_3 J2
+U 1 1 63150570
+P 3900 7150
+F 0 "J2" H 4128 7196 50  0000 L CNN
+F 1 "PWR_SIG_CONN" H 3750 6850 50  0000 L CNN
+F 2 "SIP3" H 3900 7150 50  0001 C CNN
+F 3 "" H 3900 7150 50  0001 C CNN
+	1    3900 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L V_Connector:CONN_2 J1
+U 1 1 63151226
+P 2700 7250
+F 0 "J1" H 2929 7321 50  0000 L CNN
+F 1 "PWR_ONLY_CONN" H 2550 7050 50  0000 L CNN
+F 2 "SIP2" H 2700 7250 50  0001 C CNN
+F 3 "" H 2700 7250 50  0001 C CNN
+	1    2700 7250
+	1    0    0    -1  
+$EndComp
+Text GLabel 2400 7150 0    50   Input ~ 0
+GND
+Text GLabel 2400 7300 0    50   Input ~ 0
+Vs
+Text GLabel 3600 7150 0    50   Input ~ 0
+Vs
+Text GLabel 3600 7000 0    50   Input ~ 0
+GNDsw
+Text GLabel 3600 7300 0    50   Input ~ 0
+Vsig
+Wire Wire Line
+	3600 7000 3700 7000
+Wire Wire Line
+	3600 7150 3700 7150
+Wire Wire Line
+	3600 7300 3700 7300
+Wire Wire Line
+	2400 7150 2500 7150
+Wire Wire Line
+	2400 7300 2500 7300
+Text Notes 2100 6950 0    71   ~ 0
+Power Connectors
+Wire Notes Line
+	2000 6750 2000 7600
+Wire Notes Line
+	2000 7600 4450 7600
+Wire Notes Line
+	4450 7600 4450 6750
+Wire Notes Line
+	4450 6750 2000 6750
 $EndSCHEMATC
