@@ -26,8 +26,6 @@ F 3 "" H 2250 1550 50  0001 C CNN
 $EndComp
 Text GLabel 800  800  1    50   Input ~ 0
 Vs
-Text GLabel 1450 4150 3    50   Input ~ 0
-GND
 Text GLabel 800  4150 3    50   Input ~ 0
 GND
 $Comp
@@ -65,17 +63,6 @@ F 3 "" H 2250 3650 50  0001 C CNN
 	1    2250 3650
 	1    0    0    -1  
 $EndComp
-$Comp
-L V_Passive:R R1
-U 1 1 62D1A302
-P 1450 2450
-F 0 "R1" H 1528 2496 50  0000 L CNN
-F 1 "2.2M" H 1528 2405 50  0000 L CNN
-F 2 "AX3_1" H 1450 2450 50  0001 C CNN
-F 3 "" H 1450 2450 50  0001 C CNN
-	1    1450 2450
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2650 3400 2650 3350
 Wire Wire Line
@@ -92,11 +79,6 @@ Wire Wire Line
 Wire Wire Line
 	2650 4000 2650 3900
 Wire Wire Line
-	2250 4000 1450 4000
-Connection ~ 2250 4000
-Wire Wire Line
-	1450 4000 1450 4150
-Wire Wire Line
 	2250 1900 2400 1900
 Wire Wire Line
 	2250 1900 2250 2000
@@ -107,14 +89,7 @@ Wire Wire Line
 Wire Wire Line
 	2550 3050 2550 2900
 Wire Wire Line
-	1450 2700 1450 3050
-Wire Wire Line
 	2400 2900 2400 3050
-Wire Wire Line
-	2400 3050 1450 3050
-Connection ~ 1450 3050
-Wire Wire Line
-	1450 3050 1450 3450
 Wire Wire Line
 	2550 2000 2550 1800
 Wire Wire Line
@@ -138,19 +113,7 @@ Wire Wire Line
 	2250 1900 2250 1800
 Connection ~ 2250 1900
 Wire Wire Line
-	800  800  800  1200
-Wire Wire Line
-	1450 2200 1450 1200
-Wire Wire Line
-	1450 1200 2250 1200
-Wire Wire Line
 	2250 1200 2250 1300
-Wire Wire Line
-	1450 1200 800  1200
-Connection ~ 1450 1200
-Connection ~ 800  1200
-Wire Wire Line
-	800  1200 800  2650
 Connection ~ 2250 1200
 Wire Wire Line
 	3300 2200 3300 1800
@@ -169,9 +132,6 @@ Text GLabel 1250 5300 1    50   Input ~ 0
 Vc
 Wire Wire Line
 	800  2950 800  4150
-Wire Wire Line
-	1450 3750 1450 4000
-Connection ~ 1450 4000
 $Comp
 L V_Passive:R R5
 U 1 1 62D1C19D
@@ -243,17 +203,6 @@ F 1 "1uF" H 572 2845 50  0000 R CNN
 F 2 "RA1_3" H 750 2800 50  0001 C CNN
 F 3 "" H 750 2800 50  0001 C CNN
 	1    750  2800
-	-1   0    0    1   
-$EndComp
-$Comp
-L V_Passive:C-ELECTRO_RA1_3 C2
-U 1 1 62D2E23E
-P 1400 3600
-F 0 "C2" H 1221 3554 50  0000 R CNN
-F 1 "2.2uF" H 1221 3645 50  0000 R CNN
-F 2 "RA1_3" H 1400 3600 50  0001 C CNN
-F 3 "" H 1400 3600 50  0001 C CNN
-	1    1400 3600
 	-1   0    0    1   
 $EndComp
 Text GLabel 2850 6400 3    50   Input ~ 0
@@ -850,12 +799,6 @@ Wire Wire Line
 Wire Wire Line
 	2100 4400 4300 4400
 Wire Wire Line
-	4300 4400 4300 2200
-Wire Wire Line
-	4300 2200 11100 2200
-Wire Wire Line
-	11100 2200 11100 5500
-Wire Wire Line
 	11100 5500 9400 5500
 Connection ~ 9400 5500
 Wire Wire Line
@@ -900,4 +843,172 @@ F 3 "" H 1450 6550 50  0001 C CNN
 	1    1450 6550
 	-1   0    0    1   
 $EndComp
+Wire Wire Line
+	800  800  800  1200
+Connection ~ 800  1200
+Connection ~ 2250 4000
+Wire Wire Line
+	2250 4000 1450 4000
+Wire Wire Line
+	1450 3750 1450 4000
+Connection ~ 1450 4000
+Wire Wire Line
+	1450 4000 1450 4150
+Text GLabel 1450 4150 3    50   Input ~ 0
+GND
+Wire Wire Line
+	1450 3050 1450 3450
+$Comp
+L V_Passive:C-ELECTRO_RA1_3 C2
+U 1 1 62D2E23E
+P 1400 3600
+F 0 "C2" H 1221 3554 50  0000 R CNN
+F 1 "2.2uF" H 1221 3645 50  0000 R CNN
+F 2 "RA1_3" H 1400 3600 50  0001 C CNN
+F 3 "" H 1400 3600 50  0001 C CNN
+	1    1400 3600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2400 3050 1450 3050
+Wire Wire Line
+	800  1200 800  2650
+Wire Wire Line
+	1450 1200 800  1200
+Wire Wire Line
+	1450 1200 2250 1200
+Connection ~ 1450 1200
+Wire Wire Line
+	1450 2200 1450 1200
+$Comp
+L V_Passive:R R1
+U 1 1 62D1A302
+P 1450 2450
+F 0 "R1" H 1528 2496 50  0000 L CNN
+F 1 "2.2M" H 1528 2405 50  0000 L CNN
+F 2 "AX3_1" H 1450 2450 50  0001 C CNN
+F 3 "" H 1450 2450 50  0001 C CNN
+	1    1450 2450
+	1    0    0    -1  
+$EndComp
+Connection ~ 1450 3050
+Wire Wire Line
+	1450 2700 1450 3050
+Text Notes 5300 750  0    71   ~ 0
+Optional TTL Switch
+Text Notes 5300 1200 0    39   ~ 0
+Drives >8V Vs with <5V Vsig,\ngiven MOSFET with suitably low Vgs.\nKeep Rds(on) low to avoid voltage drop.\nTo use: replace `GND` with `GNDsw`\non external low-side connector.\nInput then has 3 pins: {GNDsw, Vs, Vsig}
+Wire Wire Line
+	11100 5500 11100 2300
+Wire Wire Line
+	11100 2300 4300 2300
+Wire Wire Line
+	4300 2300 4300 4400
+Wire Wire Line
+	6950 1100 7100 1100
+Wire Wire Line
+	6950 2000 7050 2000
+Wire Wire Line
+	6950 1200 6950 1100
+Text GLabel 5150 1450 0    50   Input ~ 0
+Vsig
+Text GLabel 7050 2000 2    50   Input ~ 0
+GNDsw
+Text GLabel 7100 1100 2    50   Input ~ 0
+GND
+Wire Wire Line
+	6950 1600 6950 2000
+Wire Wire Line
+	5150 1450 5300 1450
+Wire Wire Line
+	5300 1450 5300 2000
+Wire Wire Line
+	5300 2000 5450 2000
+Connection ~ 5300 1450
+Wire Wire Line
+	5300 1450 5450 1450
+Connection ~ 6950 2000
+Wire Wire Line
+	6650 1450 6750 1450
+$Comp
+L V_Passive:R R23
+U 1 1 62EDE748
+P 5700 1450
+F 0 "R23" V 5700 1369 50  0000 L CNN
+F 1 "10k" V 5796 1405 50  0000 L CNN
+F 2 "AX3_1" H 5700 1450 50  0001 C CNN
+F 3 "" H 5700 1450 50  0001 C CNN
+	1    5700 1450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L V_Passive:R R22
+U 1 1 62D54DDC
+P 5700 2000
+F 0 "R22" V 5700 1920 50  0000 L CNN
+F 1 "1M" V 5800 1900 50  0000 L CNN
+F 2 "AX3_1" H 5700 2000 50  0001 C CNN
+F 3 "" H 5700 2000 50  0001 C CNN
+	1    5700 2000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L custom_ics:C-Ceramic_AX1_1N C7
+U 1 1 62FC70E2
+P 6050 1700
+F 0 "C7" H 5850 1750 50  0000 C BNN
+F 1 "220nF" H 5800 1650 50  0000 C BNN
+F 2 "AX1_1N" H 5750 1900 50  0001 C CNN
+F 3 "" H 5750 1900 50  0001 C CNN
+	1    6050 1700
+	-1   0    0    1   
+$EndComp
+$Comp
+L V_Passive:R R24
+U 1 1 62FE2B5E
+P 6400 1450
+F 0 "R24" V 6400 1369 50  0000 L CNN
+F 1 "470k" V 6496 1405 50  0000 L CNN
+F 2 "AX3_1" H 6400 1450 50  0001 C CNN
+F 3 "" H 6400 1450 50  0001 C CNN
+	1    6400 1450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5950 2000 6050 2000
+Wire Wire Line
+	6050 1850 6050 2000
+Connection ~ 6050 2000
+Wire Wire Line
+	6050 2000 6950 2000
+Wire Wire Line
+	5950 1450 6050 1450
+Wire Wire Line
+	6050 1450 6050 1600
+Wire Wire Line
+	6050 1450 6150 1450
+Connection ~ 6050 1450
+$Comp
+L custom_ics:MOSFET_1ct_Nch_Enh Q4
+U 1 1 62D546CF
+P 6900 1400
+F 0 "Q4" H 7052 1446 50  0000 L CNN
+F 1 "<50mOhm RdsOn" H 7052 1355 50  0000 L CNN
+F 2 "MOSFET_1CT_L3x1" H 6900 1750 50  0001 C CNN
+F 3 "" H 6800 1550 50  0001 C CNN
+	1    6900 1400
+	1    0    0    -1  
+$EndComp
+Text Notes 7050 1650 0    39   ~ 0
+ESD model assumes\n>1 nF Ciss (input capacitance)
+Text Notes 6850 1000 0    39   ~ 0
+Basic ESD protection is provided\nby the resistors and capacitor.\nShould survive 20kV for about 20us.\nSwitching time should be <10ms.\nCapacitor chosen was largest\nceramic cap available at the time.
+Wire Notes Line
+	4850 550  4850 2150
+Wire Notes Line
+	4850 2150 8150 2150
+Wire Notes Line
+	8150 2150 8150 550 
+Wire Notes Line
+	8150 550  4850 550 
 $EndSCHEMATC

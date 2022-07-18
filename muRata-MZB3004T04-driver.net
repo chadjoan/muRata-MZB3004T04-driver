@@ -1,4 +1,4 @@
-( { EESchema Netlist Version 1.1 created  Sat 16 Jul 2022 18:43:11 }
+( { EESchema Netlist Version 1.1 created  Sun 17 Jul 2022 19:24:11 }
  ( /62D0BDB1 AX3_1  R2 330k
   (    1 Vs )
   (    2 Net-(Q1-Pad4) )
@@ -15,10 +15,6 @@
   (    1 Net-(Q1-Pad1) )
   (    2 GND )
  )
- ( /62D1A302 AX3_1  R1 2.2M
-  (    1 Vs )
-  (    2 Net-(C2-Pad1) )
- )
  ( /62D1C19D AX3_1  R5 100k
   (    1 Vc )
   (    2 Vm )
@@ -29,10 +25,6 @@
  )
  ( /62D2B06C RA1_3  C1 1uF
   (    1 Vs )
-  (    2 GND )
- )
- ( /62D2E23E RA1_3  C2 2.2uF
-  (    1 Net-(C2-Pad1) )
   (    2 GND )
  )
  ( /62D319C2 AX3_1  R8 4.3k
@@ -160,6 +152,35 @@
  ( /630BEC57 RA1_3  C4 1uF
   (    1 Vm )
   (    2 GND )
+ )
+ ( /62D2E23E RA1_3  C2 2.2uF
+  (    1 Net-(C2-Pad1) )
+  (    2 GND )
+ )
+ ( /62D1A302 AX3_1  R1 2.2M
+  (    1 Vs )
+  (    2 Net-(C2-Pad1) )
+ )
+ ( /62EDE748 AX3_1  R23 10k
+  (    1 Vsig )
+  (    2 Net-(C7-Pad1) )
+ )
+ ( /62D54DDC AX3_1  R22 1M
+  (    1 Vsig )
+  (    2 GNDsw )
+ )
+ ( /62FC70E2 AX1_1N  C7 220nF
+  (    1 Net-(C7-Pad1) )
+  (    2 GNDsw )
+ )
+ ( /62FE2B5E AX3_1  R24 470k
+  (    1 Net-(C7-Pad1) )
+  (    2 Net-(Q4-Pad1) )
+ )
+ ( /62D546CF MOSFET_1CT_L3x1  Q4 <50mOhm_RdsOn
+  (    1 Net-(Q4-Pad1) )
+  (    2 GND )
+  (    3 GNDsw )
  )
 )
 *
